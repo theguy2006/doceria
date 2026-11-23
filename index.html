@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Açúcar & Afeto — bolos, doces e momentos feitos com carinho." />
+  <title>Açúcar & Afeto | Confeitaria artesanal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">Feito à mão, com carinho e ingredientes selecionados <span>♡</span></div>
+
+  <header class="site-header">
+    <a class="logo" href="#inicio" aria-label="Açúcar e Afeto, início">açúcar <span>&</span> afeto<small>CONFEITARIA ARTESANAL</small></a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Nossa história</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#encomendas">Encomendas</a>
+    </nav>
+    <a class="header-cta" href="#encomendas">Faça seu pedido <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow"><i></i> Um carinho em forma de doce</span>
+        <h1>Pequenos momentos,<br><em>grandes delícias.</em></h1>
+        <p>Bolos, doces e memórias preparados artesanalmente, com aquele gostinho acolhedor de receita de família.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#cardapio">Conheça nosso cardápio <span>→</span></a>
+          <a class="text-link" href="#sobre">Um pouquinho sobre nós</a>
+        </div>
+        <div class="hero-note"><span class="note-heart">♡</span><span><strong>Feito com afeto</strong><small>Da nossa cozinha para a sua mesa.</small></span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-photo"></div>
+        <div class="photo-sticker">feito<br><b>à mão</b> ♡</div>
+        <div class="hero-caption"><span>01 / 03</span><span>Doçura em cada detalhe</span></div>
+      </div>
+      <div class="hero-flower flower-one">✿</div><div class="hero-flower flower-two">✿</div>
+    </section>
+
+    <section class="intro-strip" aria-label="Nossos valores">
+      <span>♡ Ingredientes selecionados</span><i>✳</i><span>♡ Produção artesanal</span><i>✳</i><span>♡ Feito fresquinho para você</span>
+    </section>
+
+    <section class="section about" id="sobre">
+      <div class="about-image"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1000&q=85" alt="Sobremesa artesanal com frutas e creme" loading="lazy"><span class="image-label">com amor, sempre ♡</span></div>
+      <div class="about-copy">
+        <span class="eyebrow">Nossa essência</span>
+        <h2>Tem sabor de casa.<br><em>Tem jeito de abraço.</em></h2>
+        <p>Acreditamos que os melhores doces não são feitos apenas de farinha, açúcar e manteiga. São feitos de cuidado, lembranças boas e vontade de compartilhar.</p>
+        <p>Por isso, cada receita ganha tempo, atenção e um toque especial — como se fosse preparada para alguém da família.</p>
+        <a class="underlined-link" href="#encomendas">Venha adoçar seu dia <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="menu-section section" id="cardapio">
+      <div class="section-heading">
+        <div><span class="eyebrow">Escolhidos com carinho</span><h2>Um doce para cada <em>momento.</em></h2></div>
+        <p>Daquela fatia no fim da tarde à mesa especial da comemoração: tem sempre um favorito esperando por você.</p>
+      </div>
+      <div class="category-tabs" role="group" aria-label="Filtrar produtos">
+        <button class="tab active" data-filter="todos">Todos</button><button class="tab" data-filter="bolos">Bolos</button><button class="tab" data-filter="doces">Docinhos</button><button class="tab" data-filter="especiais">Especiais</button>
+      </div>
+      <div class="product-grid">
+        <article class="product-card" data-category="bolos"><div class="product-image"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85" alt="Bolo artesanal decorado" loading="lazy"><span class="product-tag">Queridinho</span></div><div class="product-info"><div><h3>Bolo de festa</h3><p>Massa fofinha, recheio cremoso e decoração delicada.</p></div><span class="product-number">01</span></div></article>
+        <article class="product-card" data-category="doces"><div class="product-image"><img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=900&q=85" alt="Cupcakes com cobertura delicada" loading="lazy"></div><div class="product-info"><div><h3>Cupcakes</h3><p>Pequenos bolinhos, cobertos de carinho e sabor.</p></div><span class="product-number">02</span></div></article>
+        <article class="product-card" data-category="doces"><div class="product-image"><img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=900&q=85" alt="Docinhos de chocolate" loading="lazy"></div><div class="product-info"><div><h3>Docinhos gourmet</h3><p>Brigadeiros e delicadezas para adoçar a ocasião.</p></div><span class="product-number">03</span></div></article>
+        <article class="product-card" data-category="especiais"><div class="product-image"><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=900&q=85" alt="Bolo com frutas frescas" loading="lazy"><span class="product-tag">Da estação</span></div><div class="product-info"><div><h3>Bolos caseiros</h3><p>Receitas clássicas com aquele gostinho de infância.</p></div><span class="product-number">04</span></div></article>
+        <article class="product-card" data-category="especiais"><div class="product-image"><img src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?auto=format&fit=crop&w=900&q=85" alt="Macarons em tons pastel" loading="lazy"></div><div class="product-info"><div><h3>Macarons</h3><p>Leves, delicados e perfeitos para presentear.</p></div><span class="product-number">05</span></div></article>
+        <article class="product-card" data-category="bolos"><div class="product-image"><img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=900&q=85" alt="Fatia de bolo com cobertura" loading="lazy"></div><div class="product-info"><div><h3>Bolos para o café</h3><p>Simples, fresquinhos e feitos para compartilhar.</p></div><span class="product-number">06</span></div></article>
+      </div>
+    </section>
+
+    <section class="quote-band"><span class="quote-mark">“</span><p>O ingrediente secreto é sempre<br><em>um pouquinho de amor.</em></p><span class="quote-flower">✿</span></section>
+
+    <section class="order-section section" id="encomendas">
+      <div class="order-copy"><span class="eyebrow">Vamos preparar algo especial?</span><h2>Sua próxima comemoração merece um toque <em>doce.</em></h2><p>Conte para nós o que você imaginou. Será um prazer preparar algo especial para sua mesa.</p><div class="order-detail"><span>♡</span><div><strong>Encomendas sob consulta</strong><small>Consulte disponibilidade e opções pelo WhatsApp.</small></div></div></div>
+      <div class="order-card"><span class="order-sparkle">✳</span><span class="eyebrow">Do nosso forno para você</span><h3>Vamos conversar<br>sobre seu pedido?</h3><p>Chame a gente e peça o cardápio completo.</p><a class="button button-primary" href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20conhecer%20o%20cardápio." target="_blank" rel="noopener">Pedir pelo WhatsApp <span>↗</span></a><small class="replace-number">* Troque o número do link pelo WhatsApp da confeitaria.</small></div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="logo footer-logo" href="#inicio">açúcar <span>&</span> afeto<small>CONFEITARIA ARTESANAL</small></a><p>Feito com carinho, servido com amor. ♡</p><span>© 2026 Açúcar & Afeto</span></footer>
+</body>
+</html>
